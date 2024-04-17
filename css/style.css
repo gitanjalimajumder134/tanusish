@@ -288,6 +288,7 @@ h1, h2, h3, h4, h5, h6,
     pointer-events: none; /* Make the watermark not clickable */
     z-index: 9999; /* Ensure the watermark is above other content */
 }
+
 h1, .h1 {
   font-size: 2.5rem; }
 
