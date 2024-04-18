@@ -29,7 +29,7 @@
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
     <img src="images/bckgrnd4.jpg" class="watermark" alt="Watermark">
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
-      id="ftco-navbar">
+      id="ftco-navbar" style="z-index: 200;">
       <div class="container">
         <a class="navbar-brand" href="index.html">#Tanusish</a>
         <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
@@ -78,40 +78,26 @@
     <!-- <div class="watermark" style="position: relative;">
       <img src="images/place-2.jpg" alt="Photo"> -->
     <section class="ftco-section bg-light" id="when-where-section">
-      <div class="container containerslide">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
+      <div class="container " style="position:relative;">
+        <div class="row justify-content-center pb-5" style="margin-top: -90px;">
+          <div class="col-md-12 text-center heading-section ftco-animate" style="margin-bottom: 85px;">
             <span class="clone">Itinerary</span>
             <h2 class=" w3-center mb-3">Itinerary</h2>
           </div>
         </div>
-        <div class="slide w3-content w3-display-container" style="margin-top: 35px;">
-          <!-- <div class="row"> -->
-            
+        <div class="slide w3-content w3-display-container"  >
+          <div class="button" id="btnContainer">
+            <button  id="btn1"  class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
+            <button  id="btn2" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><i class="fas fa-arrow-right"></i></button>
+            </div>
             <div class="item mySlides">
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img"
-                  style="background-image:url(images/mhndi.png); height: 359px;">
+                  style="background-image:url(images/mhndi.png); height: 359px;width: 60%;display: block;
+                  margin-left: auto; margin-right: auto;background-size: 100% 100%;">
                 </div>
-                </div>
-              </div>
-            </div>
-            <div class="item mySlides">
-              <div class="place img" style="background-image: url(images/place-1.jpg);">
-                <div class="text text-center">
-                  <div class="places img"
-                      style="background-image:url(images/haldi2.jpg); height: 359px;">
-                    </div>
-                </div>
-              </div>
-            </div>
-            <div class="item mySlides">
-              <div class="place img" style="background-image: url(images/place-2.jpg);">
-                <div class="text text-center">
-                  <div class="places img"
-                      style="background-image:url(images/wed.jpg); height: 359px;">
-                    </div>
+                <h3 style="font-family: Great Vibes, cursive;">Mehendi</h3>
                 </div>
               </div>
             </div>
@@ -119,16 +105,37 @@
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img"
-                  style="background-image:url(images/editphoto2.png); height: 359px;">
-                </div>
+                      style="background-image:url(images/haldi2.jpg); height: 359px;width: 50%;display: block;
+                      margin-left: auto; margin-right: auto;background-size: 120% 75%;">
+                    </div>
+                    <h3 style="font-family: Great Vibes, cursive;">Haldi</h3>
                 </div>
               </div>
             </div>
-            <div class="button">
-            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)"><i class="fas fa-arrow-left"></i></button>
-            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><i class="fas fa-arrow-right"></i></button>
+            <div class="item mySlides">
+              <div class="place img" style="background-image: url(images/place-3.jpg);">
+                <div class="text text-center">
+                  <div class="places img"
+                      style="background-image:url(images/wed.jpg); height: 359px;width: 50%;display: block;
+                      margin-left: auto; margin-right: auto;background-size: 140% 75%;">
+                    </div>
+                    <h3 style="font-family: Great Vibes, cursive;">Wedding</h3>
+                </div>
+              </div>
             </div>
-          <!-- </div> -->
+            <div class="item mySlides">
+              <div class="place img" style="background-image: url(images/place-3.jpg);">
+                <div class="text text-center">
+                  <div class="places img"
+                  style="background-image:url(images/editphoto2.png); height: 359px;width: 30%;display: block;
+                  margin-left: auto; margin-right: auto;background-size: 100% 100%;">
+                </div>
+                <h3 style="font-family: Great Vibes, cursive;">Reception</h3>
+                </div>
+              </div>
+            </div>
+
+
           
         </div>
       </div>
@@ -136,7 +143,7 @@
     <section class="ftco-section" id="greeting-section">
       <div class="container">
         <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate" style="margin-top: 250px;">
+          <div class="col-md-12 text-center heading-section ftco-animate" style="margin-top: 180px;">
             <span class="clone">Events Dates</span>
             <h2 class="mb-3">Events Dates</h2>
           </div>
