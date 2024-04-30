@@ -26,8 +26,9 @@
       </script>
   </head>
 
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-    <img src="images/bckgrnd4.jpg" class="watermark" alt="Watermark">
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" >
+     <img src="images/bckgrnd4.jpg" class="watermark" alt="Watermark">
+    <!-- <div class="watermark" style="background-image:url(images/bckgrnd4.jpg);"></div> -->
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light site-navbar-target"
       id="ftco-navbar" style="z-index: 200;">
       <div class="container">
@@ -53,8 +54,12 @@
       style="height: 700px; background-image: url(images/haldi.jpg); background-size:cover; background-position: top center;"
       data-stellar-background-ratio="0.5">
       <div class="overlay"></div>
-      <a class="player"
-        data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a>
+      <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover;" class="video">
+          <source src="images/tanusish.mp4" type="video/mp4">
+      </video>
+      <!--<a class="player"
+        data-property="{videoURL:'https://www.youtube.com/watch?v=Mjjw19B7rMk',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default',optimizeDisplay:true}"></a> -->
+        <!-- // <a href="images/tanusish.mp4" download="images/tanusish.mp4"></a> -->
       <div class="container">
         <div class="row js-fullheight justify-content-center d-flex align-items-center">
           <div class="col-md-12">
@@ -75,8 +80,7 @@
         </div>
       </div>
     </section>
-    <!-- <div class="watermark" style="position: relative;">
-      <img src="images/place-2.jpg" alt="Photo"> -->
+
     <section class="ftco-section bg-light" id="when-where-section">
       <div class="container " style="position:relative;">
         <div class="row justify-content-center pb-5" style="margin-top: -90px;">
@@ -91,10 +95,21 @@
             <button  id="btn2" class="w3-button w3-black w3-display-right" onclick="plusDivs(1)"><i class="fas fa-arrow-right"></i></button>
             </div>
             <div class="item mySlides">
+              <!-- <div class="place img" style="background-image: url(images/place-3.jpg);"> -->
+                <div class="text text-center">
+                  <div class="places img evntimg">
+                    
+                    <img class="responsive-img" src="images/Welcome.png" alt="Mehendi">
+                  </div>
+                  <h3 style="font-family: Great Vibes, cursive;"></h3>
+                </div>
+              <!-- </div> -->
+            </div>
+            <div class="item mySlides">
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img evntimg">
-                    <!-- Add the 'responsive-img' class to make it responsive -->
+                    
                     <img class="responsive-img" src="images/mhndi.png" alt="Mehendi">
                   </div>
                   <h3 style="font-family: Great Vibes, cursive;">Mehendi</h3>
@@ -105,7 +120,7 @@
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img evntimg">
-                    <!-- Add the 'responsive-img' class to make it responsive -->
+                    
                     <img class="responsive-img" src="images/haldi2.jpg" alt="Haldi">
                   </div>
                   <h3 style="font-family: Great Vibes, cursive;">Haldi</h3>
@@ -116,7 +131,7 @@
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img evntimg">
-                    <!-- Add the 'responsive-img' class to make it responsive -->
+                    
                     <img class="responsive-img" src="images/wed.jpg" alt="Wedding">
                   </div>
                   <h3 style="font-family: Great Vibes, cursive;">Wedding</h3>
@@ -127,7 +142,7 @@
               <div class="place img" style="background-image: url(images/place-3.jpg);">
                 <div class="text text-center">
                   <div class="places img evntimg">
-                    <!-- Add the 'responsive-img' class to make it responsive -->
+                    
                     <img class="responsive-img" src="images/editphoto2.png" alt="Reception">
                   </div>
                   <h3 style="font-family: Great Vibes, cursive;">Reception</h3>
@@ -143,7 +158,7 @@
     <section class="ftco-section" id="greeting-section">
       <div class="container">
         <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate" style="margin-top: 370px;">
+          <div class="col-md-12 text-center heading-section ftco-animate " id ="greeting">
             <span class="clone">Events Dates</span>
             <h2 class="mb-3">Events Dates</h2>
           </div>
@@ -318,310 +333,7 @@
     </section>
     
     
-    <!-- <section class="ftco-section bg-light" id="greeting-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
-            <span class="clone">Testimony</span>
-            <h2 class="mb-3">Sweet Messages</h2>
-          </div>
-        </div>
-        <div class="row ftco-animate">
-          <div class="col-md-12">
-            <div class="carousel-testimony owl-carousel ftco-owl">
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                      Consonantia,
-                      there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                      <div class="pl-3">
-                        <p class="name">Roger Scott</p>
-                        <span class="position">Marketing Manager</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                      Consonantia,
-                      there live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                      <div class="pl-3">
-                        <p class="name">Roger Scott</p>
-                        <span class="position">Marketing Manager</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                      Consonantia, there
-                      live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_3.jpg)"></div>
-                      <div class="pl-3">
-                        <p class="name">Roger Scott</p>
-                        <span class="position">Marketing Manager</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                      Consonantia, there
-                      live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_1.jpg)"></div>
-                      <div class="pl-3">
-                        <p class="name">Roger Scott</p>
-                        <span class="position">Marketing Manager</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="testimony-wrap py-4">
-                  <div class="text">
-                    <p class="mb-4">Far far away, behind the word mountains, far from the countries Vokalia and
-                      Consonantia, there
-                      live the blind texts.</p>
-                    <div class="d-flex align-items-center">
-                      <div class="user-img" style="background-image: url(images/person_2.jpg)"></div>
-                      <div class="pl-3">
-                        <p class="name">Roger Scott</p>
-                        <span class="position">Marketing Manager</span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ftco-section" id="people-section">
-      <div class="container-fluid px-md-5">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
-            <span class="clone">People</span>
-            <h2 class="mb-3">Family &amp; Friends</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-12">
-            <div class="carousel-friends owl-carousel ftco-owl ftco-animate">
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/groom-men-1.jpg);"></div>
-                  <div class="text">
-                    <h3>Mark Tomy</h3>
-                    <span>Groomsmen</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/groom-men-2.jpg);"></div>
-                  <div class="text">
-                    <h3>John Henceworth</h3>
-                    <span>Groomsmen</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/groom-men-3.jpg);"></div>
-                  <div class="text">
-                    <h3>Rey Cooper</h3>
-                    <span>Groomsmen</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/groom-men-4.jpg);"></div>
-                  <div class="text">
-                    <h3>Robert Chan</h3>
-                    <span>Groomsmen</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/bridesmaid-1.jpg);"></div>
-                  <div class="text">
-                    <h3>Rose Jones</h3>
-                    <span>Bridesmaid</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/bridesmaid-2.jpg);"></div>
-                  <div class="text">
-                    <h3>Mary Dell</h3>
-                    <span>Bridesmaid</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/bridesmaid-3.jpg);"></div>
-                  <div class="text">
-                    <h3>Alicia Brean</h3>
-                    <span>Bridesmaid</span>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="people text-center">
-                  <div class="img" style="background-image: url(images/bridesmaid-4.jpg);"></div>
-                  <div class="text">
-                    <h3>Angel Worth</h3>
-                    <span>Bridesmaid</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    
-    <!-- <section class="ftco-section bg-secondary" id="rsvp-section">
-      <div class="container">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
-            <span class="clone">RSVP</span>
-            <h2 class="mb-3">Are Your Attending?</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-7">
-            <form action="#" class="rsvp-form ftco-animate">
-              <div class>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Your email">
-                </div>
-              </div>
-              <div class>
-                <div class="form-group">
-                  <div class="form-field">
-                    <div class="select-wrap">
-                      <div class="icon d-flex align-items-center justify-content-center"><span
-                          class="ion-ios-arrow-down"></span></div>
-                      <select name id class="form-control">
-                        <option value>Guest</option>
-                        <option value>1</option>
-                        <option value>2</option>
-                        <option value>3</option>
-                        <option value>4</option>
-                        <option value>5</option>
-                      </select>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class>
-                <div class="form-group">
-                  <textarea name id cols="30" rows="2" class="form-control" placeholder="Message"></textarea>
-                </div>
-                <div class="form-group">
-                  <input type="submit" value="I am attending" class="btn btn-primary py-3 px-4">
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="ftco-section" id="gallery-section">
-      <div class="container-fluid px-md-4">
-        <div class="row justify-content-center pb-5">
-          <div class="col-md-12 text-center heading-section ftco-animate">
-            <span class="clone">Photos</span>
-            <h2 class="mb-3">Gallery</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-1.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-1.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-2.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-2.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-3.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-3.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-4.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-4.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-5.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-5.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-6.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-6.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-7.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-7.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-          <div class="col-md-3 ftco-animate">
-            <a href="images/gallery-8.jpg"
-              class="gallery img image-popup d-flex align-items-center justify-content-center"
-              style="background-image: url(images/gallery-8.jpg);">
-              <div class="icon d-flex align-items-center justify-content-center"><span class="ion-ios-image"></span></div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-    <footer class="ftco-footer ftco-section">
+   <footer class="ftco-footer ftco-section">
       <div class="container">
         <div class="row js-fullheight justify-content-center d-flex align-items-center">
           <div class="col-md-12">
@@ -632,13 +344,33 @@
         </div>
       </div>
     </footer>
-  <!-- </div> -->
-    <!-- <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
-        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
-        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
-          stroke="#F96D00" />
-      </svg></div> -->
     <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var videoSection = document.getElementById('home');
+        var watermarkImg = document.querySelector('.watermark');
+        if (videoSection && watermarkImg) {
+          videoSection.addEventListener('scroll', function () {
+            if (isInViewport(videoSection)) {
+              watermarkImg.style.display = 'none';
+            } else {
+              watermarkImg.style.display = 'block';
+            }
+          });
+        }
+    
+        function isInViewport(element) {
+          var rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+      });
+    </script>
+ <script>
+  
       var slideIndex = 1;
       showDivs(slideIndex);
 
@@ -690,5 +422,4 @@
       crossorigin="anonymous"></script>
   </body>
 
-<!-- Mirrored from preview.colorlib.com/theme/hookup/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Mar 2024 19:51:45 GMT -->
 </html>
